@@ -668,7 +668,35 @@ nav {
 footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); border-top: 1px solid rgba(200,146,42,0.15); padding: 48px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
 .footer-brand { font-family: 'Cinzel Decorative', serif; font-size: 14px; font-weight: 700; color: var(--gold); letter-spacing: 0.05em; }
 .footer-brand span { display: block; font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 3px; color: var(--gold-dim); font-weight: 400; margin-top: 4px; }
+/* footer center column */
 .footer-center { text-align: center; }
+
+/* hero logo badge */
+.hero-logo-badge {
+  margin: 24px auto 0;
+  display: flex;
+  justify-content: center;
+}
+.hero-logo-img {
+  width: 260px;
+  max-width: 65vw;
+  height: auto;
+  display: block;
+  opacity: 0.92;
+  filter: drop-shadow(0 4px 20px rgba(0,0,0,0.6));
+  transition: opacity 0.3s;
+}
+.hero-logo-img:hover { opacity: 1; }
+
+/* footer logo image */
+.footer-logo-img {
+  width: 160px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+  opacity: 0.7;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+}
 .footer-tagline { font-family: 'EB Garamond', serif; font-style: italic; font-size: 15px; color: var(--cream-dim); opacity: 0.6; }
 .footer-url { font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 2.5px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-top: 6px; opacity: 0.5; }
 .footer-credits { font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 2px; color: var(--cream-dim); text-align: right; opacity: 0.45; text-transform: uppercase; line-height: 1.8; }
@@ -747,7 +775,11 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
       <span class="hero-artist-presents">Year One · Featured Artist</span>
       <span class="hero-artist-name-big">Poteet Victory</span>
     </div>
-    <div class="hero-year-badge" style="margin-top: 28px;">August 2026 · Santa Fe, New Mexico · Indian Market Season</div>
+    <div class="hero-year-badge" style="margin-top: 24px;">August 2026 · Santa Fe, New Mexico · Indian Market Season</div>
+    <!-- Logo badge -->
+    <div class="hero-logo-badge" style="animation: fadeInUp 1.2s ease 0.5s both;">
+      <img src="SFC-logo-1.png" alt="Santa Fe Celebrates Poteet Victory" class="hero-logo-img">
+    </div>
     <p class="hero-descriptor">
       A month-long immersive art celebration anchored to Indian Market season —
       transforming Santa Fe's landmark public spaces into living canvases.
@@ -755,12 +787,12 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
     </p>
     <div class="hero-stats">
       <div class="hero-stat">
-        <span class="hero-stat-number">150,000</span>
+        <span class="hero-stat-number">115,000+</span>
         <span class="hero-stat-label">Indian Market Visitors<br>Already Coming</span>
       </div>
       <div class="hero-stat">
-        <span class="hero-stat-number">$1B+</span>
-        <span class="hero-stat-label">Santa Fe Annual<br>Art Economy</span>
+        <span class="hero-stat-number">#3</span>
+        <span class="hero-stat-label">Art Market in the U.S.<br>(Forbes 2024)</span>
       </div>
       <div class="hero-stat">
         <span class="hero-stat-number">5</span>
@@ -804,13 +836,13 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
         <h3>Immersive at Architectural Scale</h3>
         <p><strong>Santa Fe Celebrates</strong> is a month-long public art event that transforms Santa Fe's most iconic landmarks into monumental living canvases. Every night in August 2026, Poteet Victory's work is projected across the Plaza, the Cathedral Basilica, Loretto Chapel, La Fonda on the Plaza, and city parks.</p>
         <p>The work of <strong>Cherokee-Choctaw master painter Poteet Victory</strong> — palette-knife built, abstract, spiritually charged — rendered at scales never before seen. The city itself becomes the frame.</p>
-        <p>The immersive technology is led by <strong>Massimiliano ("Max") Siccardi</strong> — the world's most-produced creator of large-scale immersive experiences and creative director of the globally acclaimed Van Gogh Immersive, seen by millions across 30+ cities on five continents.</p>
+        <p>The immersive technology is led by <strong>Massimiliano ("Max") Siccardi</strong> — the world's most-produced creator of large-scale immersive experiences and creative director of the globally acclaimed Van Gogh Immersive, seen by 4.5M+ visitors in North America and 2M+ in Paris alone.</p>
       </div>
       <div class="concept-text-block">
         <h3>A New Annual Tradition</h3>
         <p><strong>Santa Fe Celebrates</strong> is designed to recur each August — rotating featured artist, deepening the city's identity as the world capital of Indigenous art. Year One is Poteet Victory. Year Two, a new Indigenous master. Every August, a new story.</p>
         <p>Year One anchors the event to the <strong>Victory on the Big Screen</strong> media slate: the <em>Victory</em> narrative feature film, the <em>Outside the Frame</em> docuseries, and <em>The Invisible Canvas</em> immersive experience — a convergent cultural moment pointing at Santa Fe.</p>
-        <p>By owning August, Santa Fe claims a month that already draws <strong>150,000 visitors for Indian Market</strong> and extends that cultural moment into a month-long event that fills hotels, restaurants, and galleries for four weeks — not a weekend.</p>
+        <p>By owning August, Santa Fe claims a month that already draws <strong>115,000+ visitors for Indian Market</strong> and extends that cultural moment into a month-long event that fills hotels, restaurants, and galleries for four weeks — not a weekend.</p>
       </div>
       <div class="concept-pullquote">
         <blockquote>The infrastructure exists. The audience exists. The art exists.<br>What Santa Fe has never done is transform itself into the art.</blockquote>
@@ -919,7 +951,7 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
     <span class="section-eyebrow">The Evidence</span>
     <h2 class="section-title" style="font-size: clamp(26px, 3.5vw, 48px);">What Immersive Public Art<br>Does to a City</h2>
     <div class="diamond-rule" style="max-width:280px; margin: 20px auto;"><div class="d"></div></div>
-    <p>Three cities have already proven what happens when you transform landmark architecture into public art. The data isn't aspirational — it's documented. Cincinnati built $142M in economic impact from a 4-day event. Amsterdam fills hotels for seven weeks. Barcelona draws 300,000 people in 3 nights. Santa Fe Celebrates deploys the same proven mechanism — anchored to 150,000 visitors already coming for Indian Market.</p>
+    <p>Three cities have already proven what happens when you transform landmark architecture into public art. The data isn't aspirational — it's documented. Cincinnati built $142M in economic impact from a 4-day event. Amsterdam fills hotels for seven weeks. Barcelona draws 300,000 people in 3 nights. Santa Fe Celebrates deploys the same proven mechanism — anchored to 115,000+ visitors already coming for Indian Market.</p>
   </div>
 
   <div class="case-studies">
@@ -1007,7 +1039,7 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
           <div class="impact-item"><h4>Municipal Investment Logic</h4><p>Organized and funded by the <strong>Barcelona City Council's Institut de Cultura</strong>. The city treats it as infrastructure — a recurring investment that pays returns in tourism, identity, and civic pride. The $2M ask for Santa Fe Celebrates follows this exact model.</p></div>
           <div class="impact-item"><h4>International Recognition</h4><p>Barcelona is the <strong>2026 World Capital of Architecture</strong> — and Llum BCN is woven into that identity. Projection mapping on existing architecture is not separate from cultural identity; it <em>is</em> cultural identity, expressed at scale.</p></div>
         </div>
-        <div class="case-verdict"><p>Barcelona fills its slowest 3 nights with 300,000 visitors while repositioning a neighborhood and reinforcing a global cultural brand. Santa Fe starts with an audience of 150,000 already present for Indian Market.</p></div>
+        <div class="case-verdict"><p>Barcelona fills its slowest 3 nights with 300,000 visitors while repositioning a neighborhood and reinforcing a global cultural brand. Santa Fe starts with an audience of over 115,000 already present for Indian Market.</p></div>
       </div>
     </div>
 
@@ -1021,8 +1053,8 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
           </div>
           <div class="case-city-stats">
             <div><div class="case-stat-val">$200M+</div><span class="case-stat-key">Indian Market Economic Impact</span></div>
-            <div><div class="case-stat-val">150,000</div><span class="case-stat-key">Visitors Already Coming</span></div>
-            <div><div class="case-stat-val">$1B+</div><span class="case-stat-key">Santa Fe Annual Art Economy</span></div>
+            <div><div class="case-stat-val">115,000+</div><span class="case-stat-key">Indian Market Visitors (2024)</span></div>
+            <div><div class="case-stat-val">#3</div><span class="case-stat-key">Art Market in U.S. — Behind NYC &amp; L.A.</span></div>
             <div><div class="case-stat-val">$2M</div><span class="case-stat-key">City Investment Ask · Year One</span></div>
           </div>
         </div>
@@ -1030,12 +1062,12 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
       <div class="case-content-panel">
         <div class="case-content-title">Why Santa Fe Leads the Way</div>
         <div class="case-impacts">
-          <div class="impact-item"><h4>The Unfair Advantage</h4><p>Cincinnati had to build its audience from scratch. Amsterdam had to create a winter season. Barcelona had to fill a slow month. <strong>Santa Fe already has 150,000 people arriving in August for Indian Market</strong> — the largest Indigenous art market in the world. The audience is already there.</p></div>
+          <div class="impact-item"><h4>The Unfair Advantage</h4><p>Cincinnati had to build its audience from scratch. Amsterdam had to create a winter season. Barcelona had to fill a slow month. <strong>Santa Fe already has over 115,000 people arriving in August for Indian Market</strong> — the largest Indigenous art market in the world. The audience is already there.</p></div>
           <div class="impact-item"><h4>The Art Already Exists</h4><p>Poteet Victory has spent 35 years building one of the most significant bodies of work in contemporary Indigenous painting. <strong>The paintings exist. The artist is here. The gallery is here.</strong> No other city in America has access to this material. Santa Fe Celebrates amplifies what is already the city's most powerful asset.</p></div>
           <div class="impact-item"><h4>Extending the Season</h4><p>Indian Market is one weekend. Santa Fe Celebrates is a <strong>month</strong>. That means 31 nights of hotel occupancy where there was previously a spike and a drop. Restaurants, galleries, retail — all sustained at Indian Market levels for four weeks instead of two days.</p></div>
           <div class="impact-item"><h4>An Annual Platform</h4><p>Year One is Poteet Victory. Year Two, a new Indigenous master. Over a decade, Santa Fe Celebrates becomes the defining cultural event in the American Southwest — the <strong>world capital of Indigenous art</strong>, not just the world's largest Indigenous art market.</p></div>
         </div>
-        <div class="case-verdict"><p>Cincinnati built $142M in impact with a 4-day event and no pre-existing art tourism infrastructure. Santa Fe starts with $200M in Indian Market impact, 150,000 visitors already present, and the world's most compelling living Indigenous artist. The question is not whether this works. The question is whether Santa Fe leads, or lets another city show it how.</p></div>
+        <div class="case-verdict"><p>Cincinnati built $142M in impact with a 4-day event and no pre-existing art tourism infrastructure. Santa Fe starts with over $200M in Indian Market economic impact, 115,000+ visitors already present, and the world's most compelling living Indigenous artist. The question is not whether this works. The question is whether Santa Fe leads, or lets another city show it how.</p></div>
       </div>
     </div>
 
@@ -1051,11 +1083,11 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
     <div class="diamond-rule" style="max-width:280px; margin: 20px auto;"><div class="d"></div></div>
   </div>
   <div class="argument-grid">
-    <div class="argument-card"><span class="argument-number">01</span><div class="argument-title">The Audience Is Already There</div><div class="argument-body">150,000 people arrive every August for Indian Market — the largest Indigenous art market in the world. <strong>No other city in America starts with that audience already in place</strong> for an Indigenous art event. Santa Fe's competitive advantage is a built-in crowd every other city would spend millions to acquire.</div></div>
+    <div class="argument-card"><span class="argument-number">01</span><div class="argument-title">The Audience Is Already There</div><div class="argument-body">115,000+ people arrive every August for Indian Market — the largest Indigenous art market in the world. <strong>No other city in America starts with that audience already in place</strong> for an Indigenous art event. Santa Fe's competitive advantage is a built-in crowd every other city would spend millions to acquire.</div></div>
     <div class="argument-card"><span class="argument-number">02</span><div class="argument-title">The Landmarks Are Already There</div><div class="argument-body">The Cathedral Basilica. Loretto Chapel. La Fonda. The Plaza. <strong>Every façade Santa Fe Celebrates maps onto is already a destination</strong> tourists pay to visit. The immersive technology activates landmarks the city already owns, requiring no new infrastructure investment.</div></div>
     <div class="argument-card"><span class="argument-number">03</span><div class="argument-title">The Artist Is at Peak</div><div class="argument-body">Poteet Victory is the <strong>first inductee to the Semple Museum of Native American Art Hall of Fame</strong>, a Smithsonian collection artist, and subject of a major biography — all within the last four years. This is the moment of peak cultural recognition, happening now, in Santa Fe.</div></div>
     <div class="argument-card"><span class="argument-number">04</span><div class="argument-title">The Media Slate Amplifies Everything</div><div class="argument-body">The <em>Victory</em> feature film, <em>Outside the Frame</em> docuseries, and <em>The Invisible Canvas</em> create a <strong>convergent media moment</strong>. Santa Fe Celebrates is the live public face of a multi-platform cultural phenomenon. National press. Documentary attention. Streaming deals. All pointing to Santa Fe in August.</div></div>
-    <div class="argument-card"><span class="argument-number">05</span><div class="argument-title">The Immersive Market Is at Inflection</div><div class="argument-body">The Van Gogh Immersive has been seen by millions across 30+ cities. The immersive art market is <strong>demonstrably one of the highest-conversion cultural tourism formats in the world</strong> — and it has never been applied to a living Indigenous artist with Poteet Victory's stature. First mover advantage is real and available now.</div></div>
+    <div class="argument-card"><span class="argument-number">05</span><div class="argument-title">The Immersive Market Is at Inflection</div><div class="argument-body">The Van Gogh Immersive sold over 3 million tickets in North America in 2021 alone and has since reached 4.5M+ North American visitors, plus millions more globally. The immersive art market is <strong>demonstrably one of the highest-conversion cultural tourism formats in the world</strong> — and it has never been applied to a living Indigenous artist with Poteet Victory's stature. First mover advantage is real and available now.</div></div>
     <div class="argument-card"><span class="argument-number">06</span><div class="argument-title">The Annual Model Compounds Returns</div><div class="argument-body">A one-time event generates a spike. An <strong>annual tradition generates compound identity</strong>. Blink is Cincinnati's cultural icon. The Amsterdam Light Festival is Amsterdam's winter brand. After ten years of Santa Fe Celebrates, the answer to "what is Santa Fe" has a new dimension — one that serves the city's economy for decades.</div></div>
   </div>
 </section>
@@ -1073,8 +1105,8 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
     <div>
       <span class="director-label">Creative Director · Immersive</span>
       <div class="director-name">Massimiliano<br>"Max" Siccardi</div>
-      <span class="director-title">Creator: Van Gogh · Klimt · Mozart · Frida · Rome &amp; the Vatican · Da Vinci Code (in development)</span>
-      <p class="director-bio">Massimiliano Siccardi is the <strong>world's most-produced creator of large-scale immersive art experiences</strong>. His <em>Van Gogh Immersive</em> has been seen by millions across 30+ cities on five continents — described as <em>"the Steven Spielberg of installation art shows."</em></p>
+      <span class="director-title">Creator: Van Gogh · Frida Kahlo · Klimt · Da Vinci Code (in development)</span>
+      <p class="director-bio">Massimiliano Siccardi is the <strong>world's most-produced creator of large-scale immersive art experiences</strong>. His <em>Van Gogh Immersive</em> has been seen by <strong>over 4.5 million visitors in North America alone</strong> — plus 2M+ in Paris at L'Atelier des Lumières — described as <em>"the Steven Spielberg of installation art shows."</em></p>
       <p class="director-bio">He curated <strong>60,600 frames of video, 90,000,000 pixels, and 500,000 cubic feet of projections</strong> set to original music for the Van Gogh experience alone. <em>Santa Fe Celebrates</em> brings this proven global format to the art of Poteet Victory and to the streets, façades, and public spaces of Santa Fe itself.</p>
       <p class="director-bio">For the first time, a Siccardi-scale production will be applied to <strong>a living Indigenous artist's work — outdoors, across an entire city, for a month</strong>.</p>
       <div class="director-stats-panel">
@@ -1087,7 +1119,7 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
           <div class="dstat"><span class="dstat-val">60,600</span><span class="dstat-key">Frames of Video</span></div>
           <div class="dstat"><span class="dstat-val">5</span><span class="dstat-key">Continents</span></div>
         </div>
-        <div class="credits-row">Creator of: <em>Van Gogh</em> · <em>Klimt</em> · <em>Mozart</em> · <em>Frida</em><br><em>Rome &amp; the Vatican</em> · <em>Da Vinci Code</em> (in development)</div>
+        <div class="credits-row">Creator of: <em>Van Gogh</em> · <em>Frida Kahlo</em> · <em>Klimt</em> · <em>Da Vinci Code</em> (in development with Dan Brown)</div>
       </div>
     </div>
     <div>
@@ -1123,7 +1155,7 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
   <div class="team-grid">
     <div class="team-card"><span class="team-role">Producer</span><div class="team-name">Marc Sternberg</div><span class="team-affiliation">Son of a Botanist Productions LLC</span><div class="team-bio">MA, MBA, MFA (Chapman University). Fulbright Specialist 2024–2027. Leads creative development and all IP rights across the full slate. Producer, 2025 Infinity Festival Monolith Awards.</div></div>
     <div class="team-card"><span class="team-role">Producer</span><div class="team-name">Andrea Bari</div><span class="team-affiliation">Name &amp; Like, Inc.</span><div class="team-bio">Entertainment attorney and educator. Head of XR, Infinity Festival. 12+ years across De Line Pictures (Warner Bros.), Tom Hanks' Playtone, and two entertainment law firms. Co-Executive Producer, 2025 Monolith Awards.</div></div>
-    <div class="team-card"><span class="team-role">Creative Lead · Immersive</span><div class="team-name">Max Siccardi</div><span class="team-affiliation">Siccardi Creations</span><div class="team-bio">Celebrated large-scale immersive artist. Creative director of the architectural-scale installation. Creator of the globally acclaimed Van Gogh Immersive, seen by millions across 30+ cities on five continents.</div></div>
+    <div class="team-card"><span class="team-role">Creative Lead · Immersive</span><div class="team-name">Max Siccardi</div><span class="team-affiliation">Siccardi Creations</span><div class="team-bio">Celebrated large-scale immersive artist. Creative director of the architectural-scale installation. Creator of the globally acclaimed Van Gogh Immersive, seen by 4.5M+ visitors in North America and 2M+ in Paris alone.</div></div>
     <div class="team-card"><span class="team-role">Producer</span><div class="team-name">Doug Dearth</div><span class="team-affiliation">One In A Row Films &amp; Corporate Media</span><div class="team-bio">President, One In A Row Films &amp; Corporate Media. Full-service boutique production company. 13+ years developing and producing feature films, documentaries, TV, and music videos.</div></div>
   </div>
 </section>
@@ -1140,7 +1172,7 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
   <div class="calendar-grid">
     <div class="cal-week"><span class="cal-week-label">Week One</span><span class="cal-week-dates">Aug 1–7</span><div class="cal-week-title">Opening Nights</div><div class="cal-week-desc">Projection mapping activates across all five venues. Nightly programming begins. Opening ceremony at Santa Fe Plaza.</div></div>
     <div class="cal-week"><span class="cal-week-label">Week Two</span><span class="cal-week-dates">Aug 8–14</span><div class="cal-week-title">Building Momentum</div><div class="cal-week-desc">Artist talks. Gallery programming at Victory Contemporary. Curator evenings and collector previews.</div></div>
-    <div class="cal-week cal-anchor"><span class="cal-week-label">Anchor Week</span><span class="cal-week-dates">Aug 15–21</span><div class="cal-week-title">Indian Market</div><div class="cal-week-desc">150,000 visitors. Every venue at full activation. The world's largest convergence of Indigenous art audiences — inside the immersive experience.</div></div>
+    <div class="cal-week cal-anchor"><span class="cal-week-label">Anchor Week</span><span class="cal-week-dates">Aug 15–21</span><div class="cal-week-title">Indian Market</div><div class="cal-week-desc">115,000+ visitors. Every venue at full activation. The world's largest convergence of Indigenous art audiences — inside the immersive experience.</div></div>
     <div class="cal-week"><span class="cal-week-label">Week Four</span><span class="cal-week-dates">Aug 22–28</span><div class="cal-week-title">Native Film Festival</div><div class="cal-week-desc">Santa Fe Native American Film Festival. Immersive programming converges with Indigenous cinema. Expanded evening hours.</div></div>
     <div class="cal-week"><span class="cal-week-label">Closing Week</span><span class="cal-week-dates">Aug 29–31</span><div class="cal-week-title">Indigenous Fashion Show &amp; Finale</div><div class="cal-week-desc">Indigenous Fashion Show. Closing ceremony. Final activation of all venues. The city marks the close of Year One.</div></div>
   </div>
@@ -1186,6 +1218,7 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
 <footer>
   <div class="footer-brand">Santa Fe Celebrates<span>An Annual Indigenous Art Tradition</span></div>
   <div class="footer-center">
+    <img src="SFC-logo-1.png" alt="Santa Fe Celebrates Poteet Victory" class="footer-logo-img">
     <div style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:5px; color:var(--gold-dim); text-transform:uppercase; opacity:0.55; margin-bottom:4px;">Santa Fe</div>
     <div style="font-family:'Cinzel Decorative',serif; font-size:20px; font-weight:700; color:var(--gold); letter-spacing:0.06em; margin-bottom:10px;">Celebrates</div>
     <div class="footer-tagline">The city becomes the canvas. The art was always here.</div>
