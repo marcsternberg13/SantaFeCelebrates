@@ -837,14 +837,14 @@ nav {
 /* ── ASK / CTA ── */
 .ask-section { background: linear-gradient(180deg, var(--ink-lt) 0%, var(--burgundy-dk) 50%, var(--ink-lt) 100%); padding: 120px 40px; text-align: center; position: relative; }
 .ask-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(92,26,26,0.5) 0%, transparent 70%); pointer-events: none; }
-.ask-inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
+.ask-inner { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; }
 .ask-section .section-title { font-size: clamp(30px, 4vw, 52px); margin-bottom: 24px; }
 .ask-body { font-size: 18px; font-style: italic; color: rgba(244,234,216,0.7); line-height: 1.7; max-width: 620px; margin: 0 auto 48px; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 680px; margin: 0 auto; }
-.contact-card { background: rgba(10,6,4,0.6); border: 1px solid rgba(200,146,42,0.2); padding: 32px; text-align: left; }
-.contact-card-name { font-family: 'Cinzel', serif; font-size: 16px; font-weight: 700; color: var(--cream); letter-spacing: 1px; display: block; margin-bottom: 6px; }
+.contact-card { background: rgba(10,6,4,0.6); border: 1px solid rgba(200,146,42,0.2); padding: 28px; text-align: left; }
+.contact-card-name { font-family: 'Cinzel', serif; font-size: 18px; font-weight: 700; color: var(--cream); letter-spacing: 1px; display: block; margin-bottom: 6px; }
 .contact-card-role-label { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: 2px; }
-.contact-card-role { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 1.5px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 16px; line-height: 1.4; }
+.contact-card-role { font-family: 'EB Garamond', serif; font-size: 20px; letter-spacing: 0.5px; color: var(--gold-dim); display: block; margin-bottom: 16px; line-height: 1.4; }
 .contact-card a { font-family: 'EB Garamond', serif; font-size: 16px; color: var(--gold-lt); text-decoration: none; display: block; line-height: 1.9; transition: color 0.2s; }
 .contact-card a:hover { color: var(--gold-pale); }
 
@@ -862,8 +862,8 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
   justify-content: center;
 }
 .hero-logo-img {
-  width: 260px;
-  max-width: 65vw;
+  width: 480px;
+  max-width: 90vw;
   height: auto;
   display: block;
   opacity: 0.92;
@@ -1010,12 +1010,12 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
   margin-bottom: 24px;
 }
 .footer-logo-img {
-  width: 160px;
+  width: 100%;
   height: auto;
   display: block;
-  opacity: 0.75;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
-  margin-top: 8px;
+  opacity: 0.85;
+  filter: drop-shadow(0 2px 12px rgba(0,0,0,0.6));
+  margin-top: 20px;
 }
 
 /* Center col */
@@ -1069,14 +1069,16 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
   letter-spacing: 0.5px;
 }
 .footer-producer-row a {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 16px;
-  font-style: italic;
-  color: var(--gold-dim);
+  font-style: normal;
+  color: var(--gold-lt);
   text-decoration: none;
   transition: color 0.2s;
+  letter-spacing: 1px;
+  white-space: nowrap;
 }
-.footer-producer-row a:hover { color: var(--gold-lt); }
+.footer-producer-row a:hover { color: var(--gold-pale); }
 
 /* Bottom bar */
 .footer-bottom {
@@ -1683,7 +1685,7 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
       <a href="http://www.victoryonthebigscreen.com" target="_blank" rel="noopener" style="font-family:'Cinzel Decorative',serif; font-size:clamp(16px,2.2vw,26px); font-weight:700; color:var(--gold-lt); text-decoration:none; letter-spacing:0.06em; transition:color 0.2s; display:inline-block;" onmouseover="this.style.color='#F0D890'" onmouseout="this.style.color='#E8B84A'">victoryonthebigscreen.com</a>
     </div>
 
-    <div class="contact-grid" style="grid-template-columns: repeat(3, 1fr); max-width: 960px;">
+    <div class="contact-grid" style="grid-template-columns: repeat(3, 1fr); max-width: 1200px; gap: 20px;">
       <div class="contact-card">
         <span class="contact-card-name">Marc Sternberg</span>
         <span class="contact-card-role-label">Producer</span>
