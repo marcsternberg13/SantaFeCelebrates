@@ -371,30 +371,148 @@ nav {
   animation: scrollPulse 2s ease-in-out infinite;
 }
 
-/* ── SANTA FE VISUAL STRIP ── */
-.sf-visual-strip {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 360px;
-  overflow: hidden;
+/* ── SANTA FE CONCEPT RENDERS SHOWCASE ── */
+.sf-showcase {
+  background: var(--ink);
+  padding: 80px 40px 100px;
   position: relative;
 }
-.sf-visual-strip::after {
+.sf-showcase::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, var(--ink) 0%, transparent 15%, transparent 80%, var(--ink-lt) 100%);
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(92,26,26,0.25) 0%, transparent 65%);
   pointer-events: none;
-  z-index: 2;
 }
-.sf-img {
-  width: 100%; height: 100%;
+.sf-showcase-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.sf-showcase-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+.sf-showcase-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 5px;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 14px;
+}
+.sf-showcase-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(22px, 3vw, 38px);
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.sf-showcase-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(17px, 2vw, 22px);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--cream-dim);
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.sf-showcase-subtitle strong { color: var(--gold-lt); font-style: normal; }
+
+/* Big hero render — full width */
+.sf-render-hero {
+  position: relative;
+  margin-bottom: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(200,146,42,0.2);
+}
+.sf-render-hero img {
+  width: 100%;
+  display: block;
+  height: 520px;
   object-fit: cover;
-  object-position: center;
-  filter: brightness(0.72) saturate(0.85);
-  transition: filter 0.5s;
+  object-position: center 25%;
+  filter: brightness(0.9);
+  transition: filter 0.5s, transform 0.6s;
 }
-.sf-img:hover { filter: brightness(0.88) saturate(1.05); }
+.sf-render-hero:hover img {
+  filter: brightness(1);
+  transform: scale(1.01);
+}
+.sf-render-caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 32px 36px 28px;
+  background: linear-gradient(0deg, rgba(10,6,4,0.88) 0%, rgba(10,6,4,0.4) 60%, transparent 100%);
+}
+.sf-render-caption-tag {
+  font-family: 'Cinzel', serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  color: var(--gold);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 6px;
+}
+.sf-render-caption-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(14px, 1.8vw, 20px);
+  font-weight: 600;
+  color: var(--cream);
+  letter-spacing: 0.5px;
+}
+
+/* Two-column bottom renders */
+.sf-render-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+.sf-render-item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(200,146,42,0.15);
+}
+.sf-render-item img {
+  width: 100%;
+  display: block;
+  height: 380px;
+  object-fit: cover;
+  filter: brightness(0.88);
+  transition: filter 0.5s, transform 0.6s;
+}
+.sf-render-item:hover img {
+  filter: brightness(1);
+  transform: scale(1.02);
+}
+
+/* Note bar */
+.sf-render-note {
+  margin-top: 24px;
+  text-align: center;
+  padding: 16px 24px;
+  border: 1px solid rgba(200,146,42,0.15);
+  background: rgba(92,26,26,0.08);
+}
+.sf-render-note p {
+  font-family: 'EB Garamond', serif;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--cream-dim);
+  opacity: 0.7;
+}
+.sf-render-note strong { color: var(--gold); font-style: normal; }
+
+@media (max-width: 900px) {
+  .sf-render-hero img { height: 300px; }
+  .sf-render-grid { grid-template-columns: 1fr; }
+  .sf-render-item img { height: 260px; }
+  .sf-showcase { padding: 60px 24px 80px; }
+}
 
 /* ── CONCEPT ── */
 .section { padding: 100px 40px; position: relative; }
@@ -717,7 +835,7 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
   .nav-links { display: none; }
   .hero { padding: 80px 24px 60px; }
   .hero-stats { gap: 24px; }
-  .sf-visual-strip { height: 200px; }
+  
   .section { padding: 70px 24px; }
   .concept-grid { grid-template-columns: 1fr; gap: 40px; }
   .concept-pullquote { padding: 40px 24px; }
@@ -816,11 +934,54 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
 
 
 <!-- ═══ SANTA FE PHOTO STRIP ═══ -->
-<div class="sf-visual-strip">
-  <img src="Santa_Fe_CP_1.jpg" alt="Santa Fe at night with projection art" class="sf-img">
-  <img src="Santa_Fe_CP_3.jpg" alt="Santa Fe Loretto Chapel projection mapping" class="sf-img">
-  <img src="Santa_Fe_CP_2.jpg" alt="Santa Fe Plaza immersive art" class="sf-img">
-</div>
+<!-- ═══ SANTA FE CONCEPT RENDERS ═══ -->
+<section class="sf-showcase">
+  <div class="sf-showcase-inner">
+
+    <div class="sf-showcase-header">
+      <span class="sf-showcase-eyebrow">Concept Renders · Year One · August 2026</span>
+      <h2 class="sf-showcase-title">Poteet Victory's Art<br>On Santa Fe's Landmarks</h2>
+      <div class="diamond-rule" style="max-width:300px; margin: 20px auto 20px;"><div class="d"></div></div>
+      <p class="sf-showcase-subtitle">
+        These concept renders show exactly what Santa Fe Celebrates Year One looks like —
+        <strong>Poteet Victory's palette-knife paintings projected at architectural scale</strong>
+        across the city's most iconic public spaces.
+      </p>
+    </div>
+
+    <!-- Hero render: Loretto Chapel -->
+    <div class="sf-render-hero">
+      <img src="Santa_Fe_CP_3.jpg" alt="Poteet Victory's paintings projected on Loretto Chapel, Santa Fe — concept render">
+      <div class="sf-render-caption">
+        <span class="sf-render-caption-tag">Façade Projection Mapping · Concept Render</span>
+        <div class="sf-render-caption-title">Loretto Chapel — Poteet Victory's Work at Architectural Scale</div>
+      </div>
+    </div>
+
+    <!-- Two-col: Canyon Road buildings + Plaza street -->
+    <div class="sf-render-grid">
+      <div class="sf-render-item">
+        <img src="Santa_Fe_CP_1.jpg" alt="Poteet Victory's paintings projected on Canyon Road buildings, Santa Fe — concept render">
+        <div class="sf-render-caption">
+          <span class="sf-render-caption-tag">Street Projection · Concept Render</span>
+          <div class="sf-render-caption-title">Canyon Road — Buildings as Canvas</div>
+        </div>
+      </div>
+      <div class="sf-render-item">
+        <img src="Santa_Fe_CP_2.jpg" alt="Poteet Victory's paintings projected across Santa Fe Plaza at night — concept render">
+        <div class="sf-render-caption">
+          <span class="sf-render-caption-tag">Plaza Projection · Concept Render</span>
+          <div class="sf-render-caption-title">Santa Fe Plaza — The Heart of the City</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sf-render-note">
+      <p><strong>Concept renders for Santa Fe Celebrates Year One</strong> — Poteet Victory's paintings applied to three of the five planned projection venues. Every night in August 2026, his work transforms the city after dark.</p>
+    </div>
+
+  </div>
+</section>
 
 
 <!-- ═══ CONCEPT ═══ -->
@@ -1133,22 +1294,42 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
           <img src="van-gogh-immersive-2.jpg" alt="Van Gogh Immersive — Starry Night floor-to-ceiling projection with visitors lying down">
           <img src="van-gogh-immersive-6.jpg" alt="Van Gogh Immersive — mirror columns with Starry Night projection">
           <img src="van-gogh-immersive-7.jpg" alt="Van Gogh Immersive — self-portrait and night river projection">
-          <img src="van-gogh-immersive-5.jpg" alt="Van Gogh Immersive — Starry Night room-scale with visitors seated on floor">
+          <img src="van-gogh-immersive-8.jpg" alt="Van Gogh Immersive — sunflowers bedroom self-portrait panels">
         </div>
 
-        <!-- Bottom row: one more image + YouTube video -->
-        <div class="vg-bottom-row">
-          <img src="van-gogh-immersive-8.jpg" alt="Van Gogh Immersive — sunflowers bedroom self-portrait panels" class="vg-bottom-img">
-          <div class="vg-video-wrapper">
-            <iframe src="https://www.youtube.com/embed/dZkQSjZYsgc?start=5" title="Siccardi Van Gogh Immersive — Official Sizzle Reel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="vg-caption">Siccardi's Van Gogh Immersive · 4.5M+ Visitors in North America · 2M+ in Paris</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FULL-WIDTH VIDEO FEATURE ── -->
+  <div class="vg-video-feature">
+    <div class="vg-video-feature-header">
+      <span class="section-eyebrow" style="text-align:center; display:block; margin-bottom:12px;">See It For Yourself</span>
+      <h3 class="vg-video-feature-title">Watch the Van Gogh Immersive<br>Official Sizzle Reel</h3>
+      <p class="vg-video-feature-sub">This is what Siccardi builds. This is what comes to Santa Fe — with Poteet Victory's paintings.</p>
+    </div>
+    <a href="https://www.youtube.com/watch?v=dZkQSjZYsgc&t=5s" target="_blank" rel="noopener" class="vg-video-thumb-link">
+      <div class="vg-video-thumb-wrap">
+        <img src="van-gogh-immersive-5.jpg" alt="Watch the Van Gogh Immersive official sizzle reel — click to play on YouTube" class="vg-video-thumb-img">
+        <div class="vg-video-thumb-overlay">
+          <div class="vg-play-btn">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="40" r="38" stroke="rgba(255,255,255,0.9)" stroke-width="2"/>
+              <polygon points="32,24 32,56 58,40" fill="white"/>
+            </svg>
+          </div>
+          <div class="vg-video-thumb-label">
+            <span class="vg-video-thumb-tag">Official Sizzle Reel · YouTube</span>
+            <span class="vg-video-thumb-title">Immersive Van Gogh — by Massimiliano Siccardi</span>
           </div>
         </div>
-
-        <!-- One final wide photo -->
-        <img src="van-gogh-immersive-4.jpg" alt="Van Gogh Immersive — full hall with mirror columns and floor projections" class="vg-hero-img" style="height:200px; object-position: center 40%;">
-
-        <div class="vg-caption">Siccardi's Van Gogh Immersive · Millions of Visitors · 30+ Cities · 5 Continents · Official Sizzle Reel Above</div>
       </div>
+    </a>
+    <div class="vg-video-note">
+      <span>Click to watch on YouTube</span>
+      <span class="vg-video-note-sep">·</span>
+      <span>4.5M+ visitors in North America · 2M+ in Paris · 30+ cities globally</span>
     </div>
   </div>
 
