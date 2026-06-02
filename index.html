@@ -62,7 +62,7 @@ body {
 
 .section-eyebrow {
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 16px;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--gold-dim);
@@ -105,7 +105,7 @@ nav {
 }
 .nav-wordmark-top {
   font-family: 'Cinzel', serif;
-  font-size: 11px;
+  font-size: 16px;
   letter-spacing: 4px;
   color: var(--cream);
   text-transform: uppercase;
@@ -113,7 +113,7 @@ nav {
 }
 .nav-wordmark-bottom {
   font-family: 'Cinzel Decorative', serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--gold);
   letter-spacing: 1.5px;
@@ -126,7 +126,7 @@ nav {
 }
 .nav-links a {
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 16px;
   letter-spacing: 2.5px;
   color: var(--cream-dim);
   text-decoration: none;
@@ -136,7 +136,7 @@ nav {
 .nav-links a:hover { color: var(--gold); }
 .nav-cta {
   font-family: 'Cinzel', serif;
-  font-size: 8.5px;
+  font-size: 16px;
   letter-spacing: 2px;
   color: var(--gold);
   border: 1px solid var(--gold-dim);
@@ -156,7 +156,7 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 100px 40px 80px;
+  padding: 100px 40px 120px;
   overflow: hidden;
 }
 .hero-bg {
@@ -215,7 +215,7 @@ nav {
 }
 .hero-title-celebrates {
   font-family: 'Cinzel', serif;
-  font-size: clamp(11px, 1.5vw, 17px);
+  font-size: clamp(16px, 1.5vw, 17px);
   letter-spacing: 9px;
   color: var(--gold);
   text-transform: uppercase;
@@ -243,7 +243,7 @@ nav {
 }
 .hero-artist-presents {
   font-family: 'Cinzel', serif;
-  font-size: clamp(8px, 1vw, 11px);
+  font-size: clamp(16px, 1vw, 11px);
   letter-spacing: 5px;
   color: var(--cream-dim);
   text-transform: uppercase;
@@ -264,7 +264,7 @@ nav {
 .hero-year-badge {
   display: inline-block;
   font-family: 'Cinzel', serif;
-  font-size: 8.5px;
+  font-size: 16px;
   letter-spacing: 5px;
   color: var(--gold);
   border: 1px solid rgba(200,146,42,0.35);
@@ -275,7 +275,7 @@ nav {
 }
 .hero-supertitle {
   font-family: 'Cinzel', serif;
-  font-size: clamp(9px, 1vw, 12px);
+  font-size: clamp(16px, 1vw, 12px);
   letter-spacing: 5px;
   color: var(--cream-dim);
   text-transform: uppercase;
@@ -313,7 +313,7 @@ nav {
 }
 .hero-stat-label {
   font-family: 'Cinzel', serif;
-  font-size: 7.5px;
+  font-size: 16px;
   letter-spacing: 2.5px;
   color: var(--cream-dim);
   text-transform: uppercase;
@@ -331,7 +331,7 @@ nav {
 }
 .btn-primary {
   font-family: 'Cinzel', serif;
-  font-size: 10px;
+  font-size: 16px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--ink);
@@ -344,7 +344,7 @@ nav {
 .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(200,146,42,0.4); }
 .btn-secondary {
   font-family: 'Cinzel', serif;
-  font-size: 10px;
+  font-size: 16px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--gold);
@@ -363,7 +363,7 @@ nav {
 }
 .hero-scroll-indicator span {
   font-family: 'Cinzel', serif;
-  font-size: 7px; letter-spacing: 3px; color: var(--gold-dim); text-transform: uppercase;
+  font-size: 16px; letter-spacing: 3px; color: var(--gold-dim); text-transform: uppercase;
 }
 .scroll-line {
   width: 1px; height: 40px;
@@ -396,7 +396,7 @@ nav {
 }
 .sf-showcase-eyebrow {
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 16px;
   letter-spacing: 5px;
   color: var(--gold-dim);
   text-transform: uppercase;
@@ -433,11 +433,13 @@ nav {
 .sf-render-hero img {
   width: 100%;
   display: block;
-  height: 520px;
-  object-fit: cover;
-  object-position: center 25%;
+  height: auto;
+  max-height: 620px;
+  object-fit: contain;
+  object-position: center center;
   filter: brightness(0.9);
   transition: filter 0.5s, transform 0.6s;
+  background: var(--ink);
 }
 .sf-render-hero:hover img {
   filter: brightness(1);
@@ -451,7 +453,7 @@ nav {
 }
 .sf-render-caption-tag {
   font-family: 'Cinzel', serif;
-  font-size: 8px;
+  font-size: 16px;
   letter-spacing: 3px;
   color: var(--gold);
   text-transform: uppercase;
@@ -460,7 +462,7 @@ nav {
 }
 .sf-render-caption-title {
   font-family: 'Cinzel', serif;
-  font-size: clamp(14px, 1.8vw, 20px);
+  font-size: clamp(16px, 1.8vw, 20px);
   font-weight: 600;
   color: var(--cream);
   letter-spacing: 0.5px;
@@ -500,7 +502,7 @@ nav {
 }
 .sf-render-note p {
   font-family: 'EB Garamond', serif;
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
   color: var(--cream-dim);
   opacity: 0.7;
@@ -528,7 +530,7 @@ nav {
 }
 .concept-text-block h3 {
   font-family: 'Cinzel', serif;
-  font-size: 11px; letter-spacing: 3px; color: var(--gold);
+  font-size: 16px; letter-spacing: 3px; color: var(--gold);
   text-transform: uppercase; margin-bottom: 16px;
 }
 .concept-text-block p {
@@ -558,7 +560,7 @@ nav {
 }
 .concept-pullquote cite {
   display: block; font-family: 'Cinzel', serif;
-  font-size: 8.5px; letter-spacing: 3px; color: var(--gold-dim);
+  font-size: 16px; letter-spacing: 3px; color: var(--gold-dim);
   text-transform: uppercase; margin-top: 20px; font-style: normal;
 }
 
@@ -584,9 +586,9 @@ nav {
 .venue-card:hover { background: rgba(92,26,26,0.25); border-color: rgba(200,146,42,0.3); transform: translateY(-4px); }
 .venue-card:hover::before { transform: scaleX(1); }
 .venue-card:first-child { background: rgba(92,26,26,0.22); border-color: rgba(200,146,42,0.25); }
-.venue-type { font-family: 'Cinzel', serif; font-size: 7.5px; letter-spacing: 2.5px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 10px; }
-.venue-name { font-family: 'Cinzel', serif; font-size: 13px; font-weight: 600; color: var(--cream); line-height: 1.3; display: block; margin-bottom: 10px; }
-.venue-desc { font-family: 'EB Garamond', serif; font-size: 13px; font-style: italic; color: var(--cream-dim); opacity: 0.7; line-height: 1.4; }
+.venue-type { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 2.5px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 10px; }
+.venue-name { font-family: 'Cinzel', serif; font-size: 16px; font-weight: 600; color: var(--cream); line-height: 1.3; display: block; margin-bottom: 10px; }
+.venue-desc { font-family: 'EB Garamond', serif; font-size: 16px; font-style: italic; color: var(--cream-dim); opacity: 0.7; line-height: 1.4; }
 
 /* ── ARTIST ── */
 .artist-section { background: linear-gradient(180deg, var(--ink-lt) 0%, var(--burgundy-dk) 40%, var(--ink-lt) 100%); padding: 100px 40px; }
@@ -596,20 +598,20 @@ nav {
 }
 .artist-tag { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
 .artist-tag-line { width: 40px; height: 1px; background: var(--gold); }
-.artist-tag-text { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; }
+.artist-tag-text { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; }
 .artist-name-big { font-family: 'Cinzel Decorative', serif; font-size: clamp(36px, 4vw, 58px); font-weight: 700; color: var(--cream); line-height: 1.05; margin-bottom: 8px; }
-.artist-heritage { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 3px; color: var(--gold-dim); text-transform: uppercase; margin-bottom: 32px; display: block; }
+.artist-heritage { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 3px; color: var(--gold-dim); text-transform: uppercase; margin-bottom: 32px; display: block; }
 .artist-bio-text { font-size: 17px; line-height: 1.8; color: rgba(244,234,216,0.72); margin-bottom: 18px; }
 .artist-bio-text strong { color: var(--cream); }
 .artist-timeline { margin-top: 40px; display: flex; flex-direction: column; gap: 0; }
 .tl-item { display: flex; gap: 20px; padding: 16px 0; border-bottom: 1px solid rgba(200,146,42,0.1); }
-.tl-year { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 1.5px; color: var(--gold); width: 65px; flex-shrink: 0; padding-top: 2px; }
+.tl-year { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 1.5px; color: var(--gold); width: 65px; flex-shrink: 0; padding-top: 2px; }
 .tl-event-title { font-family: 'EB Garamond', serif; font-size: 16px; font-weight: 600; color: var(--cream); line-height: 1.3; }
-.tl-event-desc { font-family: 'EB Garamond', serif; font-size: 14px; font-style: italic; color: var(--cream-dim); opacity: 0.65; margin-top: 2px; line-height: 1.4; }
+.tl-event-desc { font-family: 'EB Garamond', serif; font-size: 16px; font-style: italic; color: var(--cream-dim); opacity: 0.65; margin-top: 2px; line-height: 1.4; }
 .artist-honors { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 32px; }
 .honor-pill { background: rgba(200,146,42,0.08); border: 1px solid rgba(200,146,42,0.2); padding: 14px 18px; border-radius: 2px; }
-.honor-pill-label { font-family: 'Cinzel', serif; font-size: 7.5px; letter-spacing: 2px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 4px; }
-.honor-pill-value { font-family: 'EB Garamond', serif; font-size: 14px; font-weight: 600; color: var(--cream); line-height: 1.2; }
+.honor-pill-label { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 2px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 4px; }
+.honor-pill-value { font-family: 'EB Garamond', serif; font-size: 16px; font-weight: 600; color: var(--cream); line-height: 1.2; }
 
 /* ── CASE STUDIES ── */
 .case-section { background: var(--ink); padding: 100px 40px; }
@@ -637,18 +639,18 @@ nav {
   background: linear-gradient(135deg, rgba(10,6,4,0.6) 0%, rgba(10,6,4,0.2) 100%);
 }
 .case-city-name { font-family: 'Cinzel Decorative', serif; font-size: clamp(20px, 2vw, 28px); font-weight: 700; color: var(--cream); line-height: 1.1; margin-bottom: 4px; }
-.case-event-name { font-family: 'Cinzel', serif; font-size: 8.5px; letter-spacing: 2.5px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 20px; }
+.case-event-name { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 2.5px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 20px; }
 .case-city-stats { display: flex; flex-direction: column; gap: 12px; }
 .case-stat-val { font-family: 'Cinzel', serif; font-size: clamp(22px, 2.5vw, 30px); font-weight: 700; color: var(--gold); line-height: 1; }
-.case-stat-key { font-family: 'Cinzel', serif; font-size: 7px; letter-spacing: 1.8px; color: var(--cream-dim); text-transform: uppercase; opacity: 0.6; display: block; margin-top: 2px; }
+.case-stat-key { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 1.8px; color: var(--cream-dim); text-transform: uppercase; opacity: 0.6; display: block; margin-top: 2px; }
 .case-content-panel { padding: 44px 44px; background: rgba(20,12,8,0.65); border-left: 1px solid rgba(200,146,42,0.08); }
-.case-content-title { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 20px; }
+.case-content-title { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 20px; }
 .case-impacts { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-bottom: 24px; }
-.impact-item h4 { font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 2px; color: var(--gold-dim); text-transform: uppercase; margin-bottom: 6px; }
-.impact-item p { font-size: 14.5px; line-height: 1.62; color: rgba(244,234,216,0.62); }
+.impact-item h4 { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 2px; color: var(--gold-dim); text-transform: uppercase; margin-bottom: 6px; }
+.impact-item p { font-size: 16px; line-height: 1.62; color: rgba(244,234,216,0.62); }
 .impact-item p strong { color: var(--cream); font-weight: 600; }
 .case-verdict { margin-top: 20px; padding: 16px 20px; background: rgba(92,26,26,0.15); border-left: 3px solid var(--burgundy-lt); }
-.case-verdict p { font-family: 'EB Garamond', serif; font-size: 15px; font-style: italic; color: var(--cream); line-height: 1.55; }
+.case-verdict p { font-family: 'EB Garamond', serif; font-size: 16px; font-style: italic; color: var(--cream); line-height: 1.55; }
 .case-card.santa-fe { border-color: rgba(200,146,42,0.3); box-shadow: 0 0 40px rgba(200,146,42,0.08); }
 .case-card.santa-fe .case-verdict { background: rgba(92,26,26,0.3); border-left-color: var(--gold); }
 .case-card.santa-fe .case-verdict p { font-size: 16px; color: var(--gold-pale); font-weight: 500; }
@@ -660,16 +662,16 @@ nav {
 .argument-card { padding: 48px 36px; background: rgba(20,12,8,0.5); border: 1px solid rgba(200,146,42,0.1); transition: border-color 0.3s, background 0.3s; }
 .argument-card:hover { border-color: rgba(200,146,42,0.25); background: rgba(92,26,26,0.12); }
 .argument-number { font-family: 'Cinzel Decorative', serif; font-size: 48px; font-weight: 900; color: var(--burgundy-lt); opacity: 0.35; line-height: 1; margin-bottom: 16px; display: block; }
-.argument-title { font-family: 'Cinzel', serif; font-size: 13px; font-weight: 700; color: var(--cream); letter-spacing: 0.5px; margin-bottom: 16px; line-height: 1.3; }
-.argument-body { font-size: 15.5px; line-height: 1.7; color: rgba(244,234,216,0.62); }
+.argument-title { font-family: 'Cinzel', serif; font-size: 16px; font-weight: 700; color: var(--cream); letter-spacing: 0.5px; margin-bottom: 16px; line-height: 1.3; }
+.argument-body { font-size: 16px; line-height: 1.7; color: rgba(244,234,216,0.62); }
 .argument-body strong { color: var(--cream); }
 
 /* ── SICCARDI / DIRECTOR ── */
 .team-section { background: var(--ink); padding: 100px 40px; }
 .director-feature { display: grid; grid-template-columns: 1fr 480px; gap: 80px; max-width: 1100px; margin: 60px auto 80px; align-items: start; }
-.director-label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 4px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 12px; }
+.director-label { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 4px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 12px; }
 .director-name { font-family: 'Cinzel Decorative', serif; font-size: clamp(24px, 2.8vw, 38px); font-weight: 700; color: var(--cream); line-height: 1.1; margin-bottom: 6px; }
-.director-title { font-family: 'EB Garamond', serif; font-style: italic; font-size: 15px; color: var(--gold-dim); display: block; margin-bottom: 28px; }
+.director-title { font-family: 'EB Garamond', serif; font-style: italic; font-size: 16px; color: var(--gold-dim); display: block; margin-bottom: 28px; }
 .director-bio { font-size: 17px; line-height: 1.78; color: rgba(244,234,216,0.68); margin-bottom: 16px; }
 .director-bio strong { color: var(--cream); }
 
@@ -718,19 +720,22 @@ nav {
 .vg-video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
 
 .vg-caption {
-  font-family: 'Cinzel', serif; font-size: 7.5px; letter-spacing: 2px;
+  font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 2px;
   color: var(--gold-dim); text-transform: uppercase; text-align: center;
   padding: 10px; background: rgba(10,6,4,0.7);
   border: 1px solid rgba(200,146,42,0.1);
 }
 
 .director-stats-panel { background: rgba(92,26,26,0.12); border: 1px solid rgba(200,146,42,0.15); padding: 36px 32px; margin-top: 20px; }
-.dstat-eyebrow { font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 3px; color: var(--gold-dim); text-transform: uppercase; margin-bottom: 24px; display: block; }
+.dstat-eyebrow { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 3px; color: var(--gold-dim); text-transform: uppercase; margin-bottom: 24px; display: block; }
 .dstat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+@media (max-width: 900px) {
+  .dstat-grid[style*="repeat(6"] { grid-template-columns: repeat(3, 1fr) !important; }
+}
 .dstat { text-align: center; padding: 14px; background: rgba(10,6,4,0.4); border: 1px solid rgba(200,146,42,0.1); }
 .dstat-val { font-family: 'Cinzel', serif; font-size: 26px; font-weight: 700; color: var(--gold); display: block; line-height: 1; }
-.dstat-key { font-family: 'Cinzel', serif; font-size: 7px; letter-spacing: 2px; color: var(--cream-dim); text-transform: uppercase; opacity: 0.6; display: block; margin-top: 4px; }
-.credits-row { font-family: 'EB Garamond', serif; font-size: 13px; font-style: italic; color: var(--cream-dim); opacity: 0.55; text-align: center; line-height: 2; }
+.dstat-key { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 2px; color: var(--cream-dim); text-transform: uppercase; opacity: 0.6; display: block; margin-top: 4px; }
+.credits-row { font-family: 'EB Garamond', serif; font-size: 16px; font-style: italic; color: var(--cream-dim); opacity: 0.55; text-align: center; line-height: 2; }
 
 /* ── VAN GOGH FULL-WIDTH VIDEO FEATURE ── */
 .vg-video-feature {
@@ -778,11 +783,11 @@ nav {
 }
 .vg-play-btn { width: 90px; height: 90px; transition: transform 0.3s; filter: drop-shadow(0 4px 20px rgba(0,0,0,0.7)); }
 .vg-video-thumb-link:hover .vg-play-btn { transform: scale(1.12); }
-.vg-video-thumb-tag { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: 8px; }
+.vg-video-thumb-tag { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: 8px; }
 .vg-video-thumb-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(18px, 2.2vw, 28px); font-weight: 700; color: var(--cream); display: block; text-shadow: 0 2px 12px rgba(0,0,0,0.8); }
 .vg-video-note {
   margin-top: 14px;
-  font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 2.5px;
+  font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 2.5px;
   color: var(--gold-dim); text-transform: uppercase; opacity: 0.65;
   display: flex; justify-content: center; align-items: center; gap: 10px;
 }
@@ -795,10 +800,10 @@ nav {
 .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; max-width: 1100px; margin: 48px auto 0; }
 .team-card { padding: 36px 28px; background: rgba(20,12,8,0.5); border: 1px solid rgba(200,146,42,0.1); transition: all 0.3s; }
 .team-card:hover { background: rgba(92,26,26,0.12); border-color: rgba(200,146,42,0.25); }
-.team-role { font-family: 'Cinzel', serif; font-size: 7.5px; letter-spacing: 2.5px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 8px; }
-.team-name { font-family: 'Cinzel', serif; font-size: 14px; font-weight: 700; color: var(--cream); margin-bottom: 6px; letter-spacing: 0.5px; }
-.team-affiliation { font-family: 'EB Garamond', serif; font-size: 13px; font-style: italic; color: var(--gold-dim); display: block; margin-bottom: 14px; }
-.team-bio { font-size: 14px; line-height: 1.6; color: rgba(244,234,216,0.52); }
+.team-role { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 2.5px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 8px; }
+.team-name { font-family: 'Cinzel', serif; font-size: 16px; font-weight: 700; color: var(--cream); margin-bottom: 6px; letter-spacing: 0.5px; }
+.team-affiliation { font-family: 'EB Garamond', serif; font-size: 16px; font-style: italic; color: var(--gold-dim); display: block; margin-bottom: 14px; }
+.team-bio { font-size: 16px; line-height: 1.6; color: rgba(244,234,216,0.52); }
 
 /* ── CALENDAR ── */
 .calendar-section { background: linear-gradient(180deg, var(--ink-lt) 0%, var(--slate) 100%); padding: 100px 40px; }
@@ -806,10 +811,10 @@ nav {
 .calendar-grid { display: grid; grid-template-columns: repeat(5, 1fr); max-width: 1100px; margin: 0 auto; gap: 2px; }
 .cal-week { background: rgba(20,12,8,0.5); border: 1px solid rgba(200,146,42,0.1); padding: 28px 20px; text-align: center; transition: all 0.3s; }
 .cal-week:hover { background: rgba(92,26,26,0.15); border-color: rgba(200,146,42,0.3); }
-.cal-week-label { font-family: 'Cinzel', serif; font-size: 7.5px; letter-spacing: 2px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 8px; }
-.cal-week-dates { font-family: 'Cinzel', serif; font-size: 11px; font-weight: 600; color: var(--cream); display: block; margin-bottom: 14px; letter-spacing: 0.5px; }
-.cal-week-title { font-family: 'EB Garamond', serif; font-size: 15px; font-weight: 600; color: var(--gold-lt); line-height: 1.3; margin-bottom: 8px; }
-.cal-week-desc { font-size: 13px; font-style: italic; color: var(--cream-dim); opacity: 0.6; line-height: 1.4; }
+.cal-week-label { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 2px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 8px; }
+.cal-week-dates { font-family: 'Cinzel', serif; font-size: 16px; font-weight: 600; color: var(--cream); display: block; margin-bottom: 14px; letter-spacing: 0.5px; }
+.cal-week-title { font-family: 'EB Garamond', serif; font-size: 16px; font-weight: 600; color: var(--gold-lt); line-height: 1.3; margin-bottom: 8px; }
+.cal-week-desc { font-size: 16px; font-style: italic; color: var(--cream-dim); opacity: 0.6; line-height: 1.4; }
 .cal-anchor { border-color: rgba(200,146,42,0.35); background: rgba(92,26,26,0.2); }
 
 /* ── SLATE ── */
@@ -822,12 +827,12 @@ nav {
 .slate-card-2 .slate-card-bg { background: linear-gradient(135deg, #051418, #040E16); }
 .slate-card-3 .slate-card-bg { background: linear-gradient(135deg, #140A04, #0C0604); }
 .slate-card-content { position: relative; z-index: 1; }
-.slate-project-num { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 3.5px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 12px; }
-.slate-project-format { font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 2px; color: var(--cream-dim); text-transform: uppercase; border: 1px solid rgba(200,146,42,0.2); display: inline-block; padding: 4px 12px; margin-bottom: 18px; opacity: 0.7; }
+.slate-project-num { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 3.5px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 12px; }
+.slate-project-format { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 2px; color: var(--cream-dim); text-transform: uppercase; border: 1px solid rgba(200,146,42,0.2); display: inline-block; padding: 4px 12px; margin-bottom: 18px; opacity: 0.7; }
 .slate-project-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(20px, 2vw, 28px); font-weight: 700; color: var(--cream); line-height: 1.1; margin-bottom: 10px; }
 .slate-project-rule { width: 40px; height: 1px; background: var(--gold); margin-bottom: 16px; }
-.slate-project-tagline { font-family: 'EB Garamond', serif; font-size: 15px; font-style: italic; color: var(--cream-dim); line-height: 1.5; margin-bottom: 14px; }
-.slate-project-desc { font-size: 14px; line-height: 1.65; color: rgba(244,234,216,0.52); }
+.slate-project-tagline { font-family: 'EB Garamond', serif; font-size: 16px; font-style: italic; color: var(--cream-dim); line-height: 1.5; margin-bottom: 14px; }
+.slate-project-desc { font-size: 16px; line-height: 1.65; color: rgba(244,234,216,0.52); }
 
 /* ── ASK / CTA ── */
 .ask-section { background: linear-gradient(180deg, var(--ink-lt) 0%, var(--burgundy-dk) 50%, var(--ink-lt) 100%); padding: 120px 40px; text-align: center; position: relative; }
@@ -837,15 +842,16 @@ nav {
 .ask-body { font-size: 18px; font-style: italic; color: rgba(244,234,216,0.7); line-height: 1.7; max-width: 620px; margin: 0 auto 48px; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 680px; margin: 0 auto; }
 .contact-card { background: rgba(10,6,4,0.6); border: 1px solid rgba(200,146,42,0.2); padding: 32px; text-align: left; }
-.contact-card-name { font-family: 'Cinzel', serif; font-size: 12px; font-weight: 700; color: var(--cream); letter-spacing: 1px; display: block; margin-bottom: 4px; }
-.contact-card-role { font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 2.5px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 14px; }
-.contact-card a { font-family: 'EB Garamond', serif; font-size: 14px; color: var(--gold-lt); text-decoration: none; display: block; line-height: 1.9; transition: color 0.2s; }
+.contact-card-name { font-family: 'Cinzel', serif; font-size: 16px; font-weight: 700; color: var(--cream); letter-spacing: 1px; display: block; margin-bottom: 6px; }
+.contact-card-role-label { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: 2px; }
+.contact-card-role { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 1.5px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-bottom: 16px; line-height: 1.4; }
+.contact-card a { font-family: 'EB Garamond', serif; font-size: 16px; color: var(--gold-lt); text-decoration: none; display: block; line-height: 1.9; transition: color 0.2s; }
 .contact-card a:hover { color: var(--gold-pale); }
 
 /* ── FOOTER ── */
 footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); border-top: 1px solid rgba(200,146,42,0.15); padding: 48px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
-.footer-brand { font-family: 'Cinzel Decorative', serif; font-size: 14px; font-weight: 700; color: var(--gold); letter-spacing: 0.05em; }
-.footer-brand span { display: block; font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 3px; color: var(--gold-dim); font-weight: 400; margin-top: 4px; }
+.footer-brand { font-family: 'Cinzel Decorative', serif; font-size: 16px; font-weight: 700; color: var(--gold); letter-spacing: 0.05em; }
+.footer-brand span { display: block; font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 3px; color: var(--gold-dim); font-weight: 400; margin-top: 4px; }
 /* footer center column */
 .footer-center { text-align: center; }
 
@@ -875,11 +881,235 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
   opacity: 0.7;
   filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
 }
-.footer-tagline { font-family: 'EB Garamond', serif; font-style: italic; font-size: 15px; color: var(--cream-dim); opacity: 0.6; }
-.footer-url { font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 2.5px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-top: 6px; opacity: 0.5; }
-.footer-credits { font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 2px; color: var(--cream-dim); text-align: right; opacity: 0.45; text-transform: uppercase; line-height: 1.8; }
+.footer-tagline { font-family: 'EB Garamond', serif; font-style: italic; font-size: 16px; color: var(--cream-dim); opacity: 0.6; }
+.footer-url { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 2.5px; color: var(--gold-dim); text-transform: uppercase; display: block; margin-top: 6px; opacity: 0.5; }
+.footer-credits { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 2px; color: var(--cream-dim); text-align: right; opacity: 0.45; text-transform: uppercase; line-height: 1.8; }
 
 /* ── ANIMATIONS ── */
+/* ══════════════════════════════
+   REDESIGNED FOOTER
+══════════════════════════════ */
+.site-footer {
+  background: linear-gradient(180deg, #0A0604 0%, #050302 100%);
+  position: relative;
+  overflow: hidden;
+}
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dim), var(--gold), var(--gold-dim), transparent);
+}
+.site-footer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(92,26,26,0.2) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Top tagline */
+.footer-top {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 64px 40px 48px;
+  border-bottom: 1px solid rgba(200,146,42,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.footer-top-rule {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 500px;
+  margin: 0 auto 32px;
+}
+.footer-top-rule::before, .footer-top-rule::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dim));
+}
+.footer-top-rule::after {
+  background: linear-gradient(90deg, var(--gold-dim), transparent);
+}
+.footer-diamond {
+  width: 8px; height: 8px;
+  background: var(--gold);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+.footer-tagline-big {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(24px, 3vw, 38px);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--cream);
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Three-column middle */
+.footer-mid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 40px;
+  border-bottom: 1px solid rgba(200,146,42,0.1);
+}
+.footer-col {
+  padding: 0 40px;
+}
+.footer-col:first-child { padding-left: 0; border-right: 1px solid rgba(200,146,42,0.1); }
+.footer-col:last-child  { padding-right: 0; border-left: 1px solid rgba(200,146,42,0.1); }
+
+.footer-col-label {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  letter-spacing: 4px;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* Brand col */
+.footer-brand-santa {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  letter-spacing: 6px;
+  color: var(--cream-dim);
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 4px;
+}
+.footer-brand-celebrates {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.footer-brand-year {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: var(--cream-dim);
+  text-transform: uppercase;
+  opacity: 0.45;
+  margin-bottom: 24px;
+}
+.footer-logo-img {
+  width: 160px;
+  height: auto;
+  display: block;
+  opacity: 0.75;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+  margin-top: 8px;
+}
+
+/* Center col */
+.footer-col-site a {
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--gold-lt);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 16px;
+  transition: color 0.2s;
+}
+.footer-col-site a:hover { color: var(--gold-pale); }
+.footer-col-desc {
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--cream-dim);
+  opacity: 0.6;
+  line-height: 1.65;
+}
+.footer-slate-link {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: var(--gold);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 8px;
+  transition: color 0.2s;
+}
+.footer-slate-link:hover { color: var(--gold-pale); }
+
+/* Producers col */
+.footer-producer-row {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(200,146,42,0.08);
+}
+.footer-producer-row:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.footer-producer-name {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cream);
+  display: block;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+.footer-producer-row a {
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--gold-dim);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-producer-row a:hover { color: var(--gold-lt); }
+
+/* Bottom bar */
+.footer-bottom {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footer-bottom span {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: var(--cream-dim);
+  text-transform: uppercase;
+  opacity: 0.35;
+}
+
+@media (max-width: 900px) {
+  .footer-mid { grid-template-columns: 1fr; gap: 40px; padding: 40px 24px; }
+  .footer-col { padding: 0; border: none !important; }
+  .footer-col:first-child, .footer-col:last-child { border: none !important; padding: 0; }
+  .footer-bottom { flex-direction: column; text-align: center; padding: 20px 24px; }
+  .footer-top { padding: 48px 24px 36px; }
+}
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -909,7 +1139,7 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
   .team-grid { grid-template-columns: 1fr 1fr; }
   .calendar-grid { grid-template-columns: 1fr 1fr; }
   .slate-grid { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr !important; max-width: 100% !important; }
   footer { flex-direction: column; text-align: center; }
   .footer-credits { text-align: center; }
 }
@@ -954,10 +1184,6 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
       <span class="hero-artist-name-big">Poteet Victory</span>
     </div>
     <div class="hero-year-badge" style="margin-top: 24px;">August 2026 · Santa Fe, New Mexico · Indian Market Season</div>
-    <!-- Logo badge -->
-    <div class="hero-logo-badge" style="animation: fadeInUp 1.2s ease 0.5s both;">
-      <img src="SFC-logo-1.png" alt="Santa Fe Celebrates Poteet Victory" class="hero-logo-img">
-    </div>
     <p class="hero-descriptor">
       A month-long immersive art celebration anchored to Indian Market season —
       transforming Santa Fe's landmark public spaces into living canvases.
@@ -985,8 +1211,12 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
       <a href="#case" class="btn-primary">See the Evidence</a>
       <a href="#contact" class="btn-secondary">Partner With Us</a>
     </div>
+    <!-- Logo badge — below the buttons -->
+    <div class="hero-logo-badge" style="animation: fadeInUp 1.4s ease 0.7s both; margin-top: 36px;">
+      <img src="SFC-logo-1.png" alt="Santa Fe Celebrates Poteet Victory" class="hero-logo-img">
+    </div>
   </div>
-  <div class="hero-scroll-indicator">
+  <div class="hero-scroll-indicator" style="z-index: 10; position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);">
     <span>Scroll</span>
     <div class="scroll-line"></div>
   </div>
@@ -1330,18 +1560,6 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
       <p class="director-bio">Massimiliano Siccardi is the <strong>world's most-produced creator of large-scale immersive art experiences</strong>. His <em>Van Gogh Immersive</em> has been seen by <strong>over 4.5 million visitors in North America alone</strong> — plus 2M+ in Paris at L'Atelier des Lumières — described as <em>"the Steven Spielberg of installation art shows."</em></p>
       <p class="director-bio">He curated <strong>60,600 frames of video, 90,000,000 pixels, and 500,000 cubic feet of projections</strong> set to original music for the Van Gogh experience alone. <em>Santa Fe Celebrates</em> brings this proven global format to the art of Poteet Victory and to the streets, façades, and public spaces of Santa Fe itself.</p>
       <p class="director-bio">For the first time, a Siccardi-scale production will be applied to <strong>a living Indigenous artist's work — outdoors, across an entire city, for a month</strong>.</p>
-      <div class="director-stats-panel">
-        <span class="dstat-eyebrow">Van Gogh Immersive · By the Numbers</span>
-        <div class="dstat-grid">
-          <div class="dstat"><span class="dstat-val">2M+</span><span class="dstat-key">Visitors · Paris Alone</span></div>
-          <div class="dstat"><span class="dstat-val">30+</span><span class="dstat-key">Cities Worldwide</span></div>
-          <div class="dstat"><span class="dstat-val">90M</span><span class="dstat-key">Pixels Per Show</span></div>
-          <div class="dstat"><span class="dstat-val">500K</span><span class="dstat-key">Cu. Ft. Projection</span></div>
-          <div class="dstat"><span class="dstat-val">60,600</span><span class="dstat-key">Frames of Video</span></div>
-          <div class="dstat"><span class="dstat-val">5</span><span class="dstat-key">Continents</span></div>
-        </div>
-        <div class="credits-row">Creator of: <em>Van Gogh</em> · <em>Frida Kahlo</em> · <em>Klimt</em> · <em>Da Vinci Code</em> (in development with Dan Brown)</div>
-      </div>
     </div>
     <div>
       <div class="vg-block">
@@ -1355,6 +1573,20 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
         <div class="vg-caption">Siccardi's Van Gogh Immersive · 4.5M+ Visitors in North America · 2M+ in Paris</div>
       </div>
     </div>
+  </div>
+
+  <!-- ── STATS — full width below the two columns ── -->
+  <div class="director-stats-panel" style="max-width:1100px; margin: 40px auto 0;">
+    <span class="dstat-eyebrow">Van Gogh Immersive · By the Numbers</span>
+    <div class="dstat-grid" style="grid-template-columns: repeat(6, 1fr);">
+      <div class="dstat"><span class="dstat-val">4.5M+</span><span class="dstat-key">Visitors · North America</span></div>
+      <div class="dstat"><span class="dstat-val">2M+</span><span class="dstat-key">Visitors · Paris Alone</span></div>
+      <div class="dstat"><span class="dstat-val">30+</span><span class="dstat-key">Cities Worldwide</span></div>
+      <div class="dstat"><span class="dstat-val">90M</span><span class="dstat-key">Pixels Per Show</span></div>
+      <div class="dstat"><span class="dstat-val">500K</span><span class="dstat-key">Cu. Ft. Projection</span></div>
+      <div class="dstat"><span class="dstat-val">60,600</span><span class="dstat-key">Frames of Video</span></div>
+    </div>
+    <div class="credits-row">Creator of: <em>Van Gogh</em> · <em>Frida Kahlo</em> · <em>Klimt</em> · <em>Da Vinci Code</em> (in development with Dan Brown)</div>
   </div>
 
   <!-- ── FULL-WIDTH VIDEO FEATURE — properly contained ── -->
@@ -1440,29 +1672,102 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
     <h2 class="section-title">Partner With<br>Santa Fe Celebrates</h2>
     <div class="diamond-rule" style="max-width:280px; margin: 24px auto;"><div class="d"></div></div>
     <p class="ask-body">Son of a Botanist Productions and Name &amp; Like, Inc. are seeking City of Santa Fe funding, corporate sponsorship, and venue, hospitality, and cultural institution partners for Year One — Santa Fe Celebrates Poteet Victory, August 2026.</p>
-    <div class="hero-ctas" style="margin-bottom: 56px;">
+    <div class="hero-ctas" style="margin-bottom: 48px;">
       <a href="mailto:marcsternberg13@gmail.com" class="btn-primary">Contact Marc Sternberg</a>
       <a href="mailto:bariandrea@gmail.com" class="btn-secondary">Contact Andrea Bari</a>
     </div>
-    <div class="contact-grid">
-      <div class="contact-card"><span class="contact-card-name">Marc Sternberg</span><span class="contact-card-role">Producer · Son of a Botanist Productions LLC</span><a href="mailto:marcsternberg13@gmail.com">marcsternberg13@gmail.com</a><a href="tel:4805674021">(480) 567-4021</a><a href="http://www.victoryonthebigscreen.com" target="_blank">victoryonthebigscreen.com</a></div>
-      <div class="contact-card"><span class="contact-card-name">Andrea Bari</span><span class="contact-card-role">Producer · Name &amp; Like, Inc.</span><a href="mailto:bariandrea@gmail.com">bariandrea@gmail.com</a><a href="tel:3233526352">(323) 352-6352</a><a href="http://www.santafecelebrates.com" target="_blank">santafecelebrates.com</a></div>
+
+    <!-- Victory on the Big Screen — separate, prominent -->
+    <div style="margin-bottom: 40px;">
+      <div style="font-family:'Cinzel',serif; font-size:16px; letter-spacing:4px; color:var(--gold-dim); text-transform:uppercase; margin-bottom:10px; opacity:0.7;">The Full Slate</div>
+      <a href="http://www.victoryonthebigscreen.com" target="_blank" rel="noopener" style="font-family:'Cinzel Decorative',serif; font-size:clamp(16px,2.2vw,26px); font-weight:700; color:var(--gold-lt); text-decoration:none; letter-spacing:0.06em; transition:color 0.2s; display:inline-block;" onmouseover="this.style.color='#F0D890'" onmouseout="this.style.color='#E8B84A'">victoryonthebigscreen.com</a>
+    </div>
+
+    <div class="contact-grid" style="grid-template-columns: repeat(3, 1fr); max-width: 960px;">
+      <div class="contact-card">
+        <span class="contact-card-name">Marc Sternberg</span>
+        <span class="contact-card-role-label">Producer</span>
+        <span class="contact-card-role">Son of a Botanist Productions LLC</span>
+        <a href="mailto:marcsternberg13@gmail.com">marcsternberg13@gmail.com</a>
+        <a href="http://www.sonofabotanist.com" target="_blank" rel="noopener">sonofabotanist.com</a>
+      </div>
+      <div class="contact-card">
+        <span class="contact-card-name">Andrea Bari</span>
+        <span class="contact-card-role-label">Producer</span>
+        <span class="contact-card-role">Name &amp; Like, Inc.</span>
+        <a href="mailto:bariandrea@gmail.com">bariandrea@gmail.com</a>
+        <a href="http://www.nameandlike.com" target="_blank" rel="noopener">nameandlike.com</a>
+      </div>
+      <div class="contact-card">
+        <span class="contact-card-name">Doug Dearth</span>
+        <span class="contact-card-role-label">Producer</span>
+        <span class="contact-card-role">One In A Row Films &amp; Corporate Media</span>
+        <a href="mailto:dearth.doug@gmail.com">dearth.doug@gmail.com</a>
+        <a href="http://www.oneinarowfilms.com" target="_blank" rel="noopener">oneinarowfilms.com</a>
+      </div>
     </div>
   </div>
 </section>
 
 
 <!-- ═══ FOOTER ═══ -->
-<footer>
-  <div class="footer-brand">Santa Fe Celebrates<span>An Annual Indigenous Art Tradition</span></div>
-  <div class="footer-center">
-    <img src="SFC-logo-1.png" alt="Santa Fe Celebrates Poteet Victory" class="footer-logo-img">
-    <div style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:5px; color:var(--gold-dim); text-transform:uppercase; opacity:0.55; margin-bottom:4px;">Santa Fe</div>
-    <div style="font-family:'Cinzel Decorative',serif; font-size:20px; font-weight:700; color:var(--gold); letter-spacing:0.06em; margin-bottom:10px;">Celebrates</div>
-    <div class="footer-tagline">The city becomes the canvas. The art was always here.</div>
-    <span class="footer-url">www.SantaFeCelebrates.com · Santa Fe, New Mexico · August 2026</span>
+<footer class="site-footer">
+
+  <!-- Top: full-width tagline -->
+  <div class="footer-top">
+    <div style="width:100%; max-width:700px; text-align:center; margin:0 auto;">
+      <div class="footer-top-rule"><div class="footer-diamond"></div></div>
+      <p class="footer-tagline-big">The city becomes the canvas.<br>The art was always here.</p>
+    </div>
   </div>
-  <div class="footer-credits">Son of a Botanist Productions LLC<br>&amp; Name &amp; Like, Inc.<br>Victory on the Big Screen Slate</div>
+
+  <!-- Middle: three columns -->
+  <div class="footer-mid">
+
+    <!-- Col 1: Branding -->
+    <div class="footer-col footer-col-brand">
+      <div class="footer-brand-santa">Santa Fe</div>
+      <div class="footer-brand-celebrates">Celebrates</div>
+      <div class="footer-brand-year">Year One · August 2026</div>
+      <img src="SFC-logo-1.png" alt="Santa Fe Celebrates Poteet Victory" class="footer-logo-img">
+    </div>
+
+    <!-- Col 2: The event -->
+    <div class="footer-col footer-col-center">
+      <div class="footer-col-label">The Event</div>
+      <div class="footer-col-site">
+        <a href="http://www.santafecelebrates.com" target="_blank" rel="noopener">www.SantaFeCelebrates.com</a>
+      </div>
+      <p class="footer-col-desc">A month-long immersive art celebration anchored to Indian Market season — transforming Santa Fe's landmark public spaces into living canvases.</p>
+      <div class="footer-col-label" style="margin-top:20px;">The Full Slate</div>
+      <a href="http://www.victoryonthebigscreen.com" target="_blank" rel="noopener" class="footer-slate-link">victoryonthebigscreen.com</a>
+    </div>
+
+    <!-- Col 3: Producers -->
+    <div class="footer-col footer-col-producers">
+      <div class="footer-col-label">Producers</div>
+      <div class="footer-producer-row">
+        <span class="footer-producer-name">Marc Sternberg</span>
+        <a href="http://www.sonofabotanist.com" target="_blank" rel="noopener">sonofabotanist.com</a>
+      </div>
+      <div class="footer-producer-row">
+        <span class="footer-producer-name">Andrea Bari</span>
+        <a href="http://www.nameandlike.com" target="_blank" rel="noopener">nameandlike.com</a>
+      </div>
+      <div class="footer-producer-row">
+        <span class="footer-producer-name">Doug Dearth</span>
+        <a href="http://www.oneinarowfilms.com" target="_blank" rel="noopener">oneinarowfilms.com</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <span>© 2026 Son of a Botanist Productions LLC · Name &amp; Like, Inc. · One In A Row Films</span>
+    <span>Santa Fe, New Mexico</span>
+  </div>
+
 </footer>
 
 </body>
