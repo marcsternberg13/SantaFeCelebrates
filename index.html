@@ -732,6 +732,66 @@ nav {
 .dstat-key { font-family: 'Cinzel', serif; font-size: 7px; letter-spacing: 2px; color: var(--cream-dim); text-transform: uppercase; opacity: 0.6; display: block; margin-top: 4px; }
 .credits-row { font-family: 'EB Garamond', serif; font-size: 13px; font-style: italic; color: var(--cream-dim); opacity: 0.55; text-align: center; line-height: 2; }
 
+/* ── VAN GOGH FULL-WIDTH VIDEO FEATURE ── */
+.vg-video-feature {
+  width: 100%;
+  margin: 40px 0 0;
+  text-align: center;
+}
+.vg-video-feature-header { margin-bottom: 32px; }
+.vg-video-feature-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(22px, 3vw, 38px);
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+.vg-video-feature-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(17px, 1.8vw, 22px);
+  font-style: italic;
+  color: var(--cream-dim);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+.vg-video-thumb-link { display: block; text-decoration: none; }
+.vg-video-thumb-wrap {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgba(200,146,42,0.3);
+  transition: border-color 0.3s;
+}
+.vg-video-thumb-link:hover .vg-video-thumb-wrap { border-color: var(--gold); }
+.vg-video-thumb-img {
+  width: 100%; display: block;
+  height: 540px; object-fit: cover; object-position: center 30%;
+  filter: brightness(0.62);
+  transition: filter 0.4s, transform 0.5s;
+}
+.vg-video-thumb-link:hover .vg-video-thumb-img { filter: brightness(0.8); transform: scale(1.02); }
+.vg-video-thumb-overlay {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px;
+  background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(10,6,4,0.35) 0%, transparent 70%);
+}
+.vg-play-btn { width: 90px; height: 90px; transition: transform 0.3s; filter: drop-shadow(0 4px 20px rgba(0,0,0,0.7)); }
+.vg-video-thumb-link:hover .vg-play-btn { transform: scale(1.12); }
+.vg-video-thumb-tag { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: 8px; }
+.vg-video-thumb-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(18px, 2.2vw, 28px); font-weight: 700; color: var(--cream); display: block; text-shadow: 0 2px 12px rgba(0,0,0,0.8); }
+.vg-video-note {
+  margin-top: 14px;
+  font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 2.5px;
+  color: var(--gold-dim); text-transform: uppercase; opacity: 0.65;
+  display: flex; justify-content: center; align-items: center; gap: 10px;
+}
+.vg-video-note-sep { opacity: 0.4; }
+@media (max-width: 900px) {
+  .vg-video-thumb-img { height: 260px; }
+  .vg-play-btn { width: 64px; height: 64px; }
+}
+
 .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; max-width: 1100px; margin: 48px auto 0; }
 .team-card { padding: 36px 28px; background: rgba(20,12,8,0.5); border: 1px solid rgba(200,146,42,0.1); transition: all 0.3s; }
 .team-card:hover { background: rgba(92,26,26,0.12); border-color: rgba(200,146,42,0.25); }
@@ -1285,51 +1345,48 @@ footer { background: linear-gradient(180deg, var(--ink) 0%, #050302 100%); borde
     </div>
     <div>
       <div class="vg-block">
-
-        <!-- Hero image — Wheat Field room-scale -->
         <img src="van-gogh-immersive-3.jpg" alt="Siccardi Van Gogh Immersive — wheat field room-scale projection" class="vg-hero-img">
-
-        <!-- 4-thumbnail grid -->
         <div class="vg-grid-4">
           <img src="van-gogh-immersive-2.jpg" alt="Van Gogh Immersive — Starry Night floor-to-ceiling projection with visitors lying down">
           <img src="van-gogh-immersive-6.jpg" alt="Van Gogh Immersive — mirror columns with Starry Night projection">
           <img src="van-gogh-immersive-7.jpg" alt="Van Gogh Immersive — self-portrait and night river projection">
           <img src="van-gogh-immersive-8.jpg" alt="Van Gogh Immersive — sunflowers bedroom self-portrait panels">
         </div>
-
         <div class="vg-caption">Siccardi's Van Gogh Immersive · 4.5M+ Visitors in North America · 2M+ in Paris</div>
       </div>
     </div>
   </div>
 
-  <!-- ── FULL-WIDTH VIDEO FEATURE ── -->
-  <div class="vg-video-feature">
-    <div class="vg-video-feature-header">
-      <span class="section-eyebrow" style="text-align:center; display:block; margin-bottom:12px;">See It For Yourself</span>
-      <h3 class="vg-video-feature-title">Watch the Van Gogh Immersive<br>Official Sizzle Reel</h3>
-      <p class="vg-video-feature-sub">This is what Siccardi builds. This is what comes to Santa Fe — with Poteet Victory's paintings.</p>
-    </div>
-    <a href="https://www.youtube.com/watch?v=dZkQSjZYsgc&t=5s" target="_blank" rel="noopener" class="vg-video-thumb-link">
-      <div class="vg-video-thumb-wrap">
-        <img src="van-gogh-immersive-5.jpg" alt="Watch the Van Gogh Immersive official sizzle reel — click to play on YouTube" class="vg-video-thumb-img">
-        <div class="vg-video-thumb-overlay">
-          <div class="vg-play-btn">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="40" cy="40" r="38" stroke="rgba(255,255,255,0.9)" stroke-width="2"/>
-              <polygon points="32,24 32,56 58,40" fill="white"/>
-            </svg>
-          </div>
-          <div class="vg-video-thumb-label">
-            <span class="vg-video-thumb-tag">Official Sizzle Reel · YouTube</span>
-            <span class="vg-video-thumb-title">Immersive Van Gogh — by Massimiliano Siccardi</span>
+  <!-- ── FULL-WIDTH VIDEO FEATURE — properly contained ── -->
+  <div style="max-width:1100px; margin: 0 auto; padding: 0 0 20px;">
+    <div class="vg-video-feature">
+      <div class="vg-video-feature-header">
+        <span class="section-eyebrow" style="text-align:center; display:block; margin-bottom:12px;">See It For Yourself</span>
+        <h3 class="vg-video-feature-title">Watch the Van Gogh Immersive<br>Official Sizzle Reel</h3>
+        <p class="vg-video-feature-sub">This is what Siccardi builds. This is what comes to Santa Fe — with Poteet Victory's paintings.</p>
+      </div>
+      <a href="https://www.youtube.com/watch?v=dZkQSjZYsgc&t=5s" target="_blank" rel="noopener" class="vg-video-thumb-link">
+        <div class="vg-video-thumb-wrap">
+          <img src="van-gogh-immersive-5.jpg" alt="Watch the Van Gogh Immersive official sizzle reel — click to play on YouTube" class="vg-video-thumb-img">
+          <div class="vg-video-thumb-overlay">
+            <div class="vg-play-btn">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="40" r="38" stroke="rgba(255,255,255,0.9)" stroke-width="2"/>
+                <polygon points="32,24 32,56 58,40" fill="white"/>
+              </svg>
+            </div>
+            <div class="vg-video-thumb-label">
+              <span class="vg-video-thumb-tag">Official Sizzle Reel · YouTube</span>
+              <span class="vg-video-thumb-title">Immersive Van Gogh — by Massimiliano Siccardi</span>
+            </div>
           </div>
         </div>
+      </a>
+      <div class="vg-video-note">
+        <span>Click to watch on YouTube</span>
+        <span class="vg-video-note-sep">·</span>
+        <span>4.5M+ visitors in North America · 2M+ in Paris · 30+ cities globally</span>
       </div>
-    </a>
-    <div class="vg-video-note">
-      <span>Click to watch on YouTube</span>
-      <span class="vg-video-note-sep">·</span>
-      <span>4.5M+ visitors in North America · 2M+ in Paris · 30+ cities globally</span>
     </div>
   </div>
 
